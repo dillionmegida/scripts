@@ -14,8 +14,8 @@ def deleteXmlFiles(args):
     print(f'\nDeleting .XML files in {directory}')
     user_response = input("Are you sure? 🤔 (y/n): ")
 
-    if user_response == '' or user_response == 'n':
-        print('Aborting operation 😶')
+    if user_response != 'y':
+        print('\nAborting operation 😶')
         return
     
     for file in os.listdir(directory):
